@@ -1,0 +1,3 @@
+create table another_dept
+as select * from scott.dept;
+

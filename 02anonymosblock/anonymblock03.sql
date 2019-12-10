@@ -1,3 +1,4 @@
+<<oberblock>>
 DECLARE
 l_var NUMBER;
 l_outer NUMBER;
@@ -9,11 +10,12 @@ l_outer:=1;
 dbms_output.put_line('l_VAR: ' || l_var);
 dbms_output.put_line('l_OUTER: ' || l_outer);
 
+<<unterblock>>
 DECLARE
     l_var NUMBER;
     l_inner NUMBER;
 begin
-    l_var:=2;
+    oberblock.l_var:=2;
     l_inner:=3;
 
     dbms_output.put_line('l_VAR: ' || l_var);
