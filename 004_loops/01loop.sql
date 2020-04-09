@@ -1,7 +1,7 @@
 -- Basis LOOP
 
 declare
-l_counter NUMBER :=0;
+l_counter NUMBER :=1;
 l_sum NUMBER :=0;
 begin
   loop
